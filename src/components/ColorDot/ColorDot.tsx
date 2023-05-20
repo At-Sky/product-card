@@ -12,12 +12,14 @@ interface IColorDotProps {
 function ColorDot({color, position, dots, syncDots, syncImage}: IColorDotProps) {
     console.log(dots)
 
+    //function changes other dots borders
     const updateDots = (current: boolean[]) => {
         current.fill(false)
         current[position] = true
         return current
     }
 
+    //changes image based on which dot has been clicked
     const toggleDot = () => {
         syncImage(position)
         syncDots(updateDots(dots))
