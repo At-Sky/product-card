@@ -1,0 +1,22 @@
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+
+    color: #666666;
+  }
+}

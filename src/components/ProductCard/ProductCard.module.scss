@@ -1,0 +1,108 @@
+.card {
+  max-width: 400px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+
+  background: #FFFFFF;
+  border: 1px solid #E7E6EB;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+
+  padding: 40px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+
+    color: #333333;
+  }
+
+  &__price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    /* identical to box height */
+
+
+    color: #333333;
+    margin: 16px 0 8px;
+  }
+
+  &__image {
+    margin: auto;
+  }
+
+  & > a {
+    text-decoration: underline;
+  }
+
+  &__reviews {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    text-decoration: underline;
+
+    color: #61A5FA;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    border-radius: 8px;
+    padding: 13px 0;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #333333;
+
+    transition: all .2s ease-in;
+
+    &_add {
+      background: #FBBF23;
+      margin-top: 24px;
+      margin-bottom: 8px;
+
+      &:hover {
+        box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.75);
+        background: #ce9400;
+        color: white;
+      }
+    }
+
+    &_buy {
+      border: 1px solid #61A5FA;
+      border-radius: 8px;
+      margin-bottom: 24px;
+
+      &:hover {
+        background: #61A5FA;
+        color: white;
+      }
+    }
+  }
+}
